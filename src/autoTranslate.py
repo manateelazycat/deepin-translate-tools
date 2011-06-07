@@ -39,6 +39,15 @@ def postGUI(func):
         return ret
     return wrap
 
+def textViewGetContent(textView):
+    '''Get content of text view.'''
+    textBuffer = textView.get_buffer()
+    return textBuffer.get_text(textBuffer.get_start_iter(), textBuffer.get_end_iter())
+
+def textViewSetContent(textView, content):
+    '''Set content of text view.'''
+    textView.get_buffer().set_text(content)
+
 class AutoTranslate:
     '''Auto translate.'''
     DEFAULT_WIDTH = 800
@@ -116,7 +125,7 @@ class AutoTranslate:
         self.actionBox.pack_start(self.googleTranslateButton, False, False)
         
         self.finishButton = gtk.Button("完成翻译")
-        self.finishButton.connect("button-press-event", lambda w, e: self.finishDocs())
+        self.finishButton.connect("button-press-event", lambda w, e: self.finishTranslate())
         self.actionBox.pack_start(self.finishButton, False, False)
         
         # Show.
@@ -135,15 +144,15 @@ class AutoTranslate:
         # Set original information.
         self.originalName.set_text(self.pkgName)
         self.originalShortDesc.set_text(self.cache[self.pkgName].candidate.summary)
-        self.originalLongDesc.get_buffer().set_text(self.cache[self.pkgName].candidate.description)
+        textViewSetContent(self.originalLongDesc, self.cache[self.pkgName].candidate.description)
         
         # Set target information.
         self.targetName.set_text(self.pkgName)
         self.targetShortDesc.set_text("")
-        self.targetLongDesc.get_buffer().set_text("")
+        textViewSetContent(self.targetLongDesc, "")
         
-    def finishDocs(self):
-        '''Finish docs.'''
+    def finishTranslate(self):
+        '''Finish translate.'''
         # Remove old file.
         oldFile = "./todo/" + self.pkgName 
         if os.path.exists(oldFile):
@@ -151,22 +160,22 @@ class AutoTranslate:
 
         # Get content.
         content = {}
-        originalBuffer = self.originalLongDesc.get_buffer()
         content["en"] = {"pkgName" : self.originalName.get_text(),
                          "shortDesc" : self.originalShortDesc.get_text(),
-                         "longDesc" : originalBuffer.get_text(originalBuffer.get_start_iter(), originalBuffer.get_end_iter())}
-        targetBuffer = self.targetLongDesc.get_buffer()
+                         "longDesc" : textViewGetContent(self.originalLongDesc)}
         content["zh-CN"] = {"pkgName" : self.targetName.get_text(),
                             "shortDesc" : self.targetShortDesc.get_text(),
-                            "longDesc" : targetBuffer.get_text(targetBuffer.get_start_iter(), targetBuffer.get_end_iter())}
+                            "longDesc" : textViewGetContent(self.targetLongDesc)}
         content["zh-TW"] = {"pkgName" : jtof(self.targetName.get_text()),
                             "shortDesc" : jtof(self.targetShortDesc.get_text()),
-                            "longDesc" : jtof(targetBuffer.get_text(targetBuffer.get_start_iter(), targetBuffer.get_end_iter()))}
+                            "longDesc" : jtof(textViewGetContent(self.targetLongDesc))}
         
         # Create new file.
         newFile = open("./finish/" + self.pkgName, 'w')
         newFile.write(str(content))
         newFile.close()
+        
+        print "Finish translate for %s" % (self.pkgName)
         
         # Read dict from file.
         # f = open(‘text.file’,'r’)
@@ -179,10 +188,7 @@ class AutoTranslate:
         getShortDescThread.start()
         
         # Get long description.
-        longBuffer = self.originalLongDesc.get_buffer()
-        getLongDescThread = GetGoogleTranslate(longBuffer.get_text(longBuffer.get_start_iter(), 
-                                                                   longBuffer.get_end_iter()),
-                                               self.setLongDesc)
+        getLongDescThread = GetGoogleTranslate(textViewGetContent(self.originalLongDesc), self.setLongDesc)
         getLongDescThread.start()
         
     @postGUI
@@ -193,7 +199,7 @@ class AutoTranslate:
     @postGUI
     def setLongDesc(self, desc):
         '''Set long desc.'''
-        self.targetLongDesc.get_buffer().set_text(desc)
+        textViewSetContent(self.targetLongDesc, desc)
     
     def destroy(self, widget, data=None):
         '''Destroy main window.'''
@@ -219,7 +225,7 @@ class GetGoogleTranslate(td.Thread):
             self.updateCallback(result)
         except Exception, e:
             print "Get google translate failed."
-        
+            
 if __name__ == "__main__":
     autoTranslate = AutoTranslate()
     
