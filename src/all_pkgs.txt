@@ -17,7 +17,7 @@ aconnectgui
 adanaxisgpl
 adept-installer
 adept-manager
-adonthell-data
+adonthell
 advancedcaching
 aeolus
 aeskulap

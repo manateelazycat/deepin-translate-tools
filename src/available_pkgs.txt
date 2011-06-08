@@ -12,7 +12,7 @@ acidrip
 acm
 aconnectgui
 adanaxisgpl
-adonthell-data
+adonthell
 aeolus
 aeskulap
 agave
