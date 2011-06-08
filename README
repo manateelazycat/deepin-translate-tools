@@ -1,1 +1,30 @@
-Translate tools for linux deepin.
+深度批量翻译工具的使用：
+
+1 安装 git:
+  sudo apt-get install git
+   
+2 抓取批量翻译工具：
+  git clone git://github.com/manateelazycat/deepin-translate-tools.git
+ 
+3 给批量翻译工具可执行权限： 
+  cd ./deepin-translate-tools/src/ && chmod +x ./autoTranslate.py
+  
+4 启动批量翻译工具：
+  ./autoTranslate.py
+  
+5 使用批量翻译工具：
+  首先点击最上面的按钮， 选择一个包
+  工具会自动把英文的包名， 简介， 详细介绍填在左边
+  点击 ‘参考Google翻译’ 按钮， 这个工具会自动用Google翻译成中文并在右边显示
+  我们修改一下翻译， 然后点击右下脚的 ‘完成翻译’ 按钮， 翻译就完成了。
+  翻译下一个软件就继续点击最上面的按钮。 :)
+  
+6 提交翻译：
+  熟悉 git 的同学， 直接 fork 主分支 ( git://github.com/manateelazycat/deepin-translate-tools.git ) 然后给我发送 pull request 就可以了
+  不会用 git 的同学， 直接把 ./finish 目录打包给我发到我的邮箱就可以了 lazycat.manatee@gmail.com
+  
+大家翻译后留下你们的昵称吧， 我会加入贡献者的名单里面。
+
+谢谢大家！ :)
+
+  -- 懒猫
