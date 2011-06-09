@@ -120,6 +120,12 @@ class AutoTranslate:
         self.actionAlign.add(self.actionBox)
         self.mainBox.pack_start(self.actionAlign, False, False)        
         
+        self.notifyLabel = gtk.Label()
+        self.notifyAlign = gtk.Alignment()
+        self.notifyAlign.set(0.0, 0.5, 0.0, 0.0)
+        self.notifyAlign.add(self.notifyLabel)
+        self.actionBox.pack_start(self.notifyAlign)
+        
         self.googleTranslateButton = gtk.Button("参考Google翻译")
         self.googleTranslateButton.connect("button-press-event", lambda w, e: self.getGoogleTranslate())
         self.actionBox.pack_start(self.googleTranslateButton, False, False)
@@ -151,6 +157,9 @@ class AutoTranslate:
         self.targetShortDesc.set_text("")
         textViewSetContent(self.targetLongDesc, "")
         
+        # Clean notify label when init docs.
+        self.notifyLabel.set_text("")
+        
     def finishTranslate(self):
         '''Finish translate.'''
         # Remove old file.
@@ -174,6 +183,9 @@ class AutoTranslate:
         newFile = open("./finish/" + self.pkgName, 'w')
         newFile.write(str(content))
         newFile.close()
+        
+        # Notify user when finish translate.
+        self.notifyLabel.set_text("完成了%s的翻译， 请点击最上面的按钮翻译下一个包。 :)" % self.pkgName)
         
         print "Finish translate for %s" % (self.pkgName)
         
