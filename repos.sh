@@ -2,7 +2,7 @@
 
 case "$1" in
     "record" )
-        git commit -a
+        git add -A && git commit -a
         ;;
     "pull" )
         git pull origin master
