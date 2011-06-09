@@ -114,17 +114,20 @@ class AutoTranslate:
         self.targetBox.pack_start(self.targetScrolledView)
         
         # Add action button.
-        self.actionBox = gtk.HBox()
-        self.actionAlign = gtk.Alignment()
-        self.actionAlign.set(1.0, 0.5, 0.0, 0.0)
-        self.actionAlign.add(self.actionBox)
-        self.mainBox.pack_start(self.actionAlign, False, False)        
+        self.bottomBox = gtk.HBox()
+        self.mainBox.pack_start(self.bottomBox, False, False)        
         
         self.notifyLabel = gtk.Label()
         self.notifyAlign = gtk.Alignment()
         self.notifyAlign.set(0.0, 0.5, 0.0, 0.0)
         self.notifyAlign.add(self.notifyLabel)
-        self.actionBox.pack_start(self.notifyAlign)
+        self.bottomBox.pack_start(self.notifyAlign)
+        
+        self.actionBox = gtk.HBox()
+        self.actionAlign = gtk.Alignment()
+        self.actionAlign.set(1.0, 0.5, 0.0, 0.0)
+        self.actionAlign.add(self.actionBox)
+        self.bottomBox.pack_start(self.actionAlign, False, False)
         
         self.googleTranslateButton = gtk.Button("参考Google翻译")
         self.googleTranslateButton.connect("button-press-event", lambda w, e: self.getGoogleTranslate())
