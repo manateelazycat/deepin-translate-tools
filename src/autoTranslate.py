@@ -80,8 +80,8 @@ class AutoTranslate:
         
         # Add translate view.
         self.translatePaned = gtk.HPaned()
-        self.translatePaned.set_position(self.DEFAULT_WIDTH / 2)
         self.mainBox.pack_start(self.translatePaned)        
+        self.window.connect("size-allocate", lambda w, e: self.adjustPaned()) # adjust paned position when window change size
         
         self.originalBox = gtk.VBox()
         self.translatePaned.pack1(self.originalBox)
@@ -271,6 +271,10 @@ class AutoTranslate:
     def destroy(self, widget, data=None):
         '''Destroy main window.'''
     	gtk.main_quit()
+        
+    def adjustPaned(self):
+        '''Adjust paned make both side view have same width.'''
+        self.translatePaned.set_position(self.window.allocation.width / 2)
         
 class GetGoogleTranslate(td.Thread):
     '''Get google translate.'''
