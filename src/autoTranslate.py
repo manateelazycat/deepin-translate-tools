@@ -71,16 +71,12 @@ class AutoTranslate:
         self.window.add(self.mainBox)
         
         # Add choose file button.
-        self.fileChooseBox = gtk.HBox()
-        self.mainBox.pack_start(self.fileChooseBox, False, False)
-        
-        self.fileChooseLabel = gtk.Label("选择需要翻译的包")
-        self.fileChooseBox.pack_start(self.fileChooseLabel, False, False)
-        
-        self.fileChooseButton = gtk.FileChooserButton("选择需要翻译的包")
-        self.fileChooseButton.set_current_folder("./todo")
-        self.fileChooseButton.connect("file-set", self.generateDocs)
-        self.fileChooseBox.pack_start(self.fileChooseButton)
+        self.fileChooseLabel = gtk.Label("(_O) 选择需要翻译的包")
+        self.fileChooseLabel.set_use_underline(True)
+        self.fileChooseLabelButton = gtk.Button()
+        self.fileChooseLabelButton.add(self.fileChooseLabel)
+        self.fileChooseLabelButton.connect("clicked", lambda w: self.showFileChooseDialog())
+        self.mainBox.pack_start(self.fileChooseLabelButton, False, False)
         
         # Add translate view.
         self.translatePaned = gtk.HPaned()
@@ -90,27 +86,43 @@ class AutoTranslate:
         self.originalBox = gtk.VBox()
         self.translatePaned.pack1(self.originalBox)
         self.originalName = gtk.Entry()
-        self.originalBox.pack_start(self.originalName, False, False)
+        self.originalNameFrame = gtk.Frame("软件名称 （英文）")
+        self.originalNameFrame.add(self.originalName)
+        self.originalBox.pack_start(self.originalNameFrame, False, False)
+        
         self.originalShortDesc = gtk.Entry()
-        self.originalBox.pack_start(self.originalShortDesc, False, False)
+        self.originalShortDescFrame = gtk.Frame("简介 （英文)")
+        self.originalShortDescFrame.add(self.originalShortDesc)
+        self.originalBox.pack_start(self.originalShortDescFrame, False, False)
+        
         self.originalLongDesc = gtk.TextView()
         self.originalLongDesc.set_wrap_mode(gtk.WRAP_WORD)
+        self.originalLongDescFrame = gtk.Frame("详细介绍 （英文）")
+        self.originalLongDescFrame.add(self.originalLongDesc)
         self.originalScrolledView = gtk.ScrolledWindow()
         self.originalScrolledView.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
-        self.originalScrolledView.add(self.originalLongDesc)
+        self.originalScrolledView.add_with_viewport(self.originalLongDescFrame)
         self.originalBox.pack_start(self.originalScrolledView)
 
         self.targetBox = gtk.VBox()
         self.translatePaned.pack2(self.targetBox)
         self.targetName = gtk.Entry()
-        self.targetBox.pack_start(self.targetName, False, False)
+        self.targetNameFrame = gtk.Frame("软件名称 （简体中文)")
+        self.targetNameFrame.add(self.targetName)
+        self.targetBox.pack_start(self.targetNameFrame, False, False)
+        
         self.targetShortDesc = gtk.Entry()
-        self.targetBox.pack_start(self.targetShortDesc, False, False)
+        self.targetShortDescFrame = gtk.Frame("简介 （简体中文)")
+        self.targetShortDescFrame.add(self.targetShortDesc)
+        self.targetBox.pack_start(self.targetShortDescFrame, False, False)
+        
         self.targetLongDesc = gtk.TextView()
         self.targetLongDesc.set_wrap_mode(gtk.WRAP_WORD)
+        self.targetLongDescFrame = gtk.Frame("详细介绍 （简体中文)")
+        self.targetLongDescFrame.add(self.targetLongDesc)
         self.targetScrolledView = gtk.ScrolledWindow()
         self.targetScrolledView.set_policy(gtk.POLICY_AUTOMATIC, gtk.POLICY_AUTOMATIC)
-        self.targetScrolledView.add(self.targetLongDesc)
+        self.targetScrolledView.add_with_viewport(self.targetLongDescFrame)
         self.targetBox.pack_start(self.targetScrolledView)
         
         # Add action button.
@@ -129,12 +141,12 @@ class AutoTranslate:
         self.actionAlign.add(self.actionBox)
         self.bottomBox.pack_start(self.actionAlign, False, False)
         
-        self.googleTranslateButton = gtk.Button("参考Google翻译")
-        self.googleTranslateButton.connect("button-press-event", lambda w, e: self.getGoogleTranslate())
+        self.googleTranslateButton = gtk.Button("(_T) 参考Google翻译", None, True)
+        self.googleTranslateButton.connect("clicked", lambda w: self.getGoogleTranslate())
         self.actionBox.pack_start(self.googleTranslateButton, False, False)
         
-        self.finishButton = gtk.Button("完成翻译")
-        self.finishButton.connect("button-press-event", lambda w, e: self.finishTranslate())
+        self.finishButton = gtk.Button("(_F) 完成翻译")
+        self.finishButton.connect("clicked", lambda w: self.finishTranslate())
         self.actionBox.pack_start(self.finishButton, False, False)
         
         # Show.
@@ -144,10 +156,35 @@ class AutoTranslate:
         # Main loop.
         gtk.main()
         
-    def generateDocs(self, fileChooseButton):
+    def showFileChooseDialog(self):
+        '''Show file choose dialog.'''
+        # Init dialog.
+        dialog = gtk.FileChooserDialog(
+            '选择需要翻译的包',           
+            None,                     
+            gtk.FILE_CHOOSER_ACTION_OPEN, 
+            (gtk.STOCK_CANCEL,
+             gtk.RESPONSE_CANCEL,
+             gtk.STOCK_OPEN,
+             gtk.RESPONSE_OK)) 
+        
+        # Set directory.
+        dialog.set_current_folder("./todo")
+        
+        # Run dialog.
+        res = dialog.run()
+
+        # Generate docs if response ok.
+        if res == gtk.RESPONSE_OK:
+            filename = dialog.get_filename()
+            self.generateDocs(filename)
+
+        # Destroy dialog.
+        dialog.destroy()
+        
+    def generateDocs(self, filename):
         '''Generate docs.'''
         # Get package name.
-        filename = fileChooseButton.get_filename()
         (_, self.pkgName) = os.path.split(filename)
         
         # Set original information.
@@ -162,6 +199,9 @@ class AutoTranslate:
         
         # Clean notify label when init docs.
         self.notifyLabel.set_text("")
+        
+        # Focus short description entry.
+        self.targetShortDesc.grab_focus()
         
     def finishTranslate(self):
         '''Finish translate.'''
@@ -199,11 +239,23 @@ class AutoTranslate:
     def getGoogleTranslate(self):
         '''Get google translate.'''
         # Get short description.
-        getShortDescThread = GetGoogleTranslate(self.originalShortDesc.get_text(), self.setShortDesc)
+        getShortDescThread = GetGoogleTranslate(
+            self.originalShortDesc.get_text(), 
+            self.setShortDesc, 
+            self.notifyLabel,
+            "抓取%s简介翻译..." % (self.pkgName),
+            "抓取%s简介翻译完毕" % (self.pkgName)
+            )
         getShortDescThread.start()
         
         # Get long description.
-        getLongDescThread = GetGoogleTranslate(textViewGetContent(self.originalLongDesc), self.setLongDesc)
+        getLongDescThread = GetGoogleTranslate(
+            textViewGetContent(self.originalLongDesc), 
+            self.setLongDesc,
+            self.notifyLabel,
+            "抓取%s详细翻译..." % (self.pkgName),
+            "抓取%s详细翻译完毕" % (self.pkgName)
+            )
         getLongDescThread.start()
         
     @postGUI
@@ -223,18 +275,23 @@ class AutoTranslate:
 class GetGoogleTranslate(td.Thread):
     '''Get google translate.'''
 	
-    def __init__(self, desc, updateCallback):
+    def __init__(self, desc, updateCallback, notifyLabel, progressText, finishText):
         '''Init translate thread.'''
         td.Thread.__init__(self)
         self.setDaemon(True) # make thread exit when main program exit 
         self.desc = desc
         self.updateCallback = updateCallback
+        self.notifyLabel = notifyLabel
+        self.progressText = progressText
+        self.finishText = finishText
 
     def run(self):
         '''Run'''
         try:
+            self.notifyLabel.set_text(self.progressText)
             url = "http://ajax.googleapis.com/ajax/services/language/translate?v=1.0&langpair=en|zh-CN&" + urllib.urlencode({"q" : self.desc})
             connection = urllib2.urlopen(url)
+            self.notifyLabel.set_text(self.finishText)
             jsonData = json.loads(connection.read())        
             result = (jsonData["responseData"])["translatedText"]
             self.updateCallback(result)
