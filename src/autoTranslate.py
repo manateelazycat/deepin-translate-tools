@@ -141,6 +141,10 @@ class AutoTranslate:
         self.actionAlign.add(self.actionBox)
         self.bottomBox.pack_start(self.actionAlign, False, False)
         
+        self.moveTranslateButton = gtk.Button("(_M) 移动中文翻译到右边", None, True)
+        self.moveTranslateButton.connect("clicked", lambda w: self.moveTranslation())
+        self.actionBox.pack_start(self.moveTranslateButton, False, False)
+        
         self.googleTranslateButton = gtk.Button("(_T) 参考Google翻译", None, True)
         self.googleTranslateButton.connect("clicked", lambda w: self.getGoogleTranslate())
         self.actionBox.pack_start(self.googleTranslateButton, False, False)
@@ -235,6 +239,18 @@ class AutoTranslate:
         # Read dict from file.
         # f = open(‘text.file’,'r’)
         # my_dict = eval(f.read())        
+        
+    def moveTranslation(self):
+        '''Move translation to right side.'''
+        # Move translation to right side.
+        self.targetName.set_text(self.originalName.get_text())        
+        self.targetShortDesc.set_text(self.originalShortDesc.get_text())
+        textViewSetContent(self.targetLongDesc, textViewGetContent(self.originalLongDesc))
+        
+        # Clean translation in left side.
+        self.originalName.set_text("")
+        self.originalShortDesc.set_text("")
+        textViewSetContent(self.originalLongDesc, "")
         
     def getGoogleTranslate(self):
         '''Get google translate.'''
