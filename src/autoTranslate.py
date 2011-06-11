@@ -144,6 +144,7 @@ class AutoTranslate:
         self.moveTranslateButton = gtk.Button("(_M) 移动中文翻译到右边", None, True)
         self.moveTranslateButton.connect("clicked", lambda w: self.moveTranslation())
         self.actionBox.pack_start(self.moveTranslateButton, False, False)
+        self.notifyLabel.set_text("从 http://packages.ubuntu.com/en/natty/%s 复制英文文档" % (self.pkgName))
         
         self.googleTranslateButton = gtk.Button("(_T) 参考Google翻译", None, True)
         self.googleTranslateButton.connect("clicked", lambda w: self.getGoogleTranslate())

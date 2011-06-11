@@ -37,7 +37,7 @@
 8 怎样处理那些已经是中文解释的包？
 
   比如, uim 这个包已经被别人翻译成中文了，首先我们点击下面的 ‘移动中文翻译到右边‘ 的按钮， 这样中文翻译会自动移动到右边， 然后查找英文文档并复制到左边， 点击 ‘完成翻译’ 按钮就可以了， 这样软件中心就可以根据用户的语言环境显示不用的语言。
-  英文文档可以通过 http://packages.ubuntu.com/natty/ + 包名 来找， 比如 uim 就是 http://packages.ubuntu.com/natty/uim
+  英文文档可以通过 http://packages.ubuntu.com/en/natty/ + 包名 来找， 比如 uim 就是 http://packages.ubuntu.com/en/natty/uim
     
 大家翻译后留下你们的昵称吧， 我会加入贡献者的名单里面。
 
