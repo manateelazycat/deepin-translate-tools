@@ -248,7 +248,6 @@ class AutoTranslate:
         textViewSetContent(self.targetLongDesc, textViewGetContent(self.originalLongDesc))
         
         # Clean translation in left side.
-        self.originalName.set_text("")
         self.originalShortDesc.set_text("")
         textViewSetContent(self.originalLongDesc, "")
         
