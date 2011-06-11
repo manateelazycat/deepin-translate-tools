@@ -130,6 +130,7 @@ class AutoTranslate:
         self.mainBox.pack_start(self.bottomBox, False, False)        
         
         self.notifyLabel = gtk.Label()
+        self.notifyLabel.set_selectable(True)
         self.notifyAlign = gtk.Alignment()
         self.notifyAlign.set(0.0, 0.5, 0.0, 0.0)
         self.notifyAlign.add(self.notifyLabel)
