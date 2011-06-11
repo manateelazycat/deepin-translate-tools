@@ -253,7 +253,7 @@ class AutoTranslate:
         textViewSetContent(self.originalLongDesc, "")
         
         # Show address notify.
-        self.notifyLabel.set_text("从 http://packages.ubuntu.com/en/natty/%s 复制英文文档" % (self.pkgName))
+        self.notifyLabel.set_text("请从 http://packages.ubuntu.com/en/natty/%s 复制英文文档" % (self.pkgName))
         
     def getGoogleTranslate(self):
         '''Get google translate.'''
