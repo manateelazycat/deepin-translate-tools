@@ -1,18 +1,23 @@
 深度批量翻译工具的使用：
 
 1 安装 git:
+
   sudo apt-get install git
    
 2 抓取批量翻译工具：
+
   git clone git://github.com/manateelazycat/deepin-translate-tools.git
  
 3 给批量翻译工具可执行权限： 
+
   cd ./deepin-translate-tools/src/ && chmod +x ./autoTranslate.py
   
 4 启动批量翻译工具：
+
   ./autoTranslate.py
   
 5 使用批量翻译工具：
+
   首先点击最上面的按钮， 选择一个包
   工具会自动把英文的包名， 简介， 详细介绍填在左边
   点击 ‘参考Google翻译’ 按钮， 这个工具会自动用Google翻译成中文并在右边显示
@@ -20,9 +25,20 @@
   翻译下一个软件就继续点击最上面的按钮。 :)
   
 6 提交翻译：
+
   熟悉 git 的同学， 直接 fork 主分支 ( git://github.com/manateelazycat/deepin-translate-tools.git ) 然后给我发送 pull request 就可以了
   不会用 git 的同学， 直接把 ./finish 目录打包给我发到我的邮箱就可以了 lazycat.manatee@gmail.com
   
+7 翻译风格：
+
+  准确， 流畅。
+  如果有些英文翻译过来确实非常绕口， 可以适当的添加修饰词让中文文档读起来更加流畅。  
+  
+8 怎样处理那些已经是中文解释的包？
+
+  比如, uim 这个包已经被别人翻译成中文了，首先我们点击下面的 ‘移动中文翻译到右边‘ 的按钮， 这样中文翻译会自动移动到右边， 然后查找英文文档并复制到左边， 点击 ‘完成翻译’ 按钮就可以了， 这样软件中心就可以根据用户的语言环境显示不用的语言。
+  英文文档可以通过 http://packages.ubuntu.com/natty/ + 包名 来找， 比如 uim 就是 http://packages.ubuntu.com/natty/uim
+    
 大家翻译后留下你们的昵称吧， 我会加入贡献者的名单里面。
 
 谢谢大家！ :)
