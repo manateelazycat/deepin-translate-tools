@@ -71,12 +71,26 @@ class AutoTranslate:
         self.window.add(self.mainBox)
         
         # Add choose file button.
+        self.chooseBox = gtk.HBox()
+        self.mainBox.pack_start(self.chooseBox, False, False)
+        
         self.fileChooseLabel = gtk.Label("(_O) 选择需要翻译的包")
         self.fileChooseLabel.set_use_underline(True)
         self.fileChooseLabelButton = gtk.Button()
         self.fileChooseLabelButton.add(self.fileChooseLabel)
-        self.fileChooseLabelButton.connect("clicked", lambda w: self.showFileChooseDialog())
-        self.mainBox.pack_start(self.fileChooseLabelButton, False, False)
+        self.fileChooseLabelButton.connect(
+            "clicked", 
+            lambda w: self.showFileChooseDialog("选择需要翻译的包", "./todo", self.generateDocs))
+        self.chooseBox.pack_start(self.fileChooseLabelButton)
+        
+        self.retranslateLabel = gtk.Label("(_R) 选择需要重新翻译的包")
+        self.retranslateLabel.set_use_underline(True)
+        self.retranslateLabelButton = gtk.Button()
+        self.retranslateLabelButton.add(self.retranslateLabel)
+        self.retranslateLabelButton.connect(
+            "clicked",
+            lambda w: self.showFileChooseDialog("选择需要重新翻译的包", "./finish", self.retranslate))
+        self.chooseBox.pack_start(self.retranslateLabelButton)
         
         # Add translate view.
         self.translatePaned = gtk.HPaned()
@@ -161,11 +175,11 @@ class AutoTranslate:
         # Main loop.
         gtk.main()
         
-    def showFileChooseDialog(self):
+    def showFileChooseDialog(self, title, directory, callback):
         '''Show file choose dialog.'''
         # Init dialog.
         dialog = gtk.FileChooserDialog(
-            '选择需要翻译的包',           
+            title,
             None,                     
             gtk.FILE_CHOOSER_ACTION_OPEN, 
             (gtk.STOCK_CANCEL,
@@ -174,7 +188,7 @@ class AutoTranslate:
              gtk.RESPONSE_OK)) 
         
         # Set directory.
-        dialog.set_current_folder("./todo")
+        dialog.set_current_folder(directory)
         
         # Run dialog.
         res = dialog.run()
@@ -182,7 +196,7 @@ class AutoTranslate:
         # Generate docs if response ok.
         if res == gtk.RESPONSE_OK:
             filename = dialog.get_filename()
-            self.generateDocs(filename)
+            callback(filename)
 
         # Destroy dialog.
         dialog.destroy()
@@ -211,6 +225,36 @@ class AutoTranslate:
         else:
             # Notify user if haven't package.
             self.notifyLabel.set_text("你的系统没有 %s 这个包， 请选择其他包翻译. :)" % (self.pkgName))
+
+    def retranslate(self, filename):
+        '''Generate docs.'''
+        # Get package name.
+        (_, self.pkgName) = os.path.split(filename)
+        
+        if os.path.exists(filename):
+            # Get translation.
+            translationFile = open(filename, "r")
+            translation = eval(translationFile.read())
+            translationFile.close()
+            
+            # Set original information.
+            self.originalName.set_text(self.pkgName)
+            self.originalShortDesc.set_text((translation["en"])["shortDesc"])
+            textViewSetContent(self.originalLongDesc, (translation["en"])["longDesc"])
+            
+            # Set target information.
+            self.targetName.set_text(self.pkgName)
+            self.targetShortDesc.set_text((translation["zh-CN"])["shortDesc"])
+            textViewSetContent(self.targetLongDesc, (translation["zh-CN"])["longDesc"])
+            
+            # Clean notify label when init docs.
+            self.notifyLabel.set_text("")
+            
+            # Focus short description entry.
+            self.targetShortDesc.grab_focus()
+        else:
+            # Notify user if haven't package.
+            self.notifyLabel.set_text("%s 不存在" % (filename))
         
     def finishTranslate(self):
         '''Finish translate.'''
