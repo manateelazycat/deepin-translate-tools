@@ -238,12 +238,12 @@ class AutoTranslate:
             translationFile.close()
             
             # Set original information.
-            self.originalName.set_text(self.pkgName)
+            self.originalName.set_text((translation["en"])["pkgName"])
             self.originalShortDesc.set_text((translation["en"])["shortDesc"])
             textViewSetContent(self.originalLongDesc, (translation["en"])["longDesc"])
             
             # Set target information.
-            self.targetName.set_text(self.pkgName)
+            self.targetName.set_text((translation["zh-CN"])["pkgName"])
             self.targetShortDesc.set_text((translation["zh-CN"])["shortDesc"])
             textViewSetContent(self.targetLongDesc, (translation["zh-CN"])["longDesc"])
             
