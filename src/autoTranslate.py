@@ -253,7 +253,7 @@ class AutoTranslate:
             # Focus short description entry.
             self.targetShortDesc.grab_focus()
         else:
-            # Notify user if haven't package.
+            # Notify user if haven't file.
             self.notifyLabel.set_text("%s 不存在" % (filename))
         
     def finishTranslate(self):
