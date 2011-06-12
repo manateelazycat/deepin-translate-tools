@@ -192,21 +192,25 @@ class AutoTranslate:
         # Get package name.
         (_, self.pkgName) = os.path.split(filename)
         
-        # Set original information.
-        self.originalName.set_text(self.pkgName)
-        self.originalShortDesc.set_text(self.cache[self.pkgName].candidate.summary)
-        textViewSetContent(self.originalLongDesc, self.cache[self.pkgName].candidate.description)
-        
-        # Set target information.
-        self.targetName.set_text(self.pkgName)
-        self.targetShortDesc.set_text("")
-        textViewSetContent(self.targetLongDesc, "")
-        
-        # Clean notify label when init docs.
-        self.notifyLabel.set_text("")
-        
-        # Focus short description entry.
-        self.targetShortDesc.grab_focus()
+        if self.cache.has_key(self.pkgName):
+            # Set original information.
+            self.originalName.set_text(self.pkgName)
+            self.originalShortDesc.set_text(self.cache[self.pkgName].candidate.summary)
+            textViewSetContent(self.originalLongDesc, self.cache[self.pkgName].candidate.description)
+            
+            # Set target information.
+            self.targetName.set_text(self.pkgName)
+            self.targetShortDesc.set_text("")
+            textViewSetContent(self.targetLongDesc, "")
+            
+            # Clean notify label when init docs.
+            self.notifyLabel.set_text("")
+            
+            # Focus short description entry.
+            self.targetShortDesc.grab_focus()
+        else:
+            # Notify user if haven't package.
+            self.notifyLabel.set_text("你的系统没有 %s 这个包， 请选择其他包翻译. :)" % (self.pkgName))
         
     def finishTranslate(self):
         '''Finish translate.'''
