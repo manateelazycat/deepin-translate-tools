@@ -19,7 +19,6 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-import apt
 import gtk
 import pygtk
 import os
@@ -57,7 +56,6 @@ class AutoTranslate:
         # Init.
         gtk.gdk.threads_init()        
         
-        self.cache = apt.Cache()
         self.pkgName = None
         
         # Init window.
@@ -201,38 +199,8 @@ class AutoTranslate:
         # Destroy dialog.
         dialog.destroy()
         
-    def generateDocs(self, filename):
-        '''Generate docs.'''
-        # Get package name.
-        (_, self.pkgName) = os.path.split(filename)
-        
-        if self.cache.has_key(self.pkgName):
-            # Get content.
-            contentFile = open(filename, "r")
-            content = eval(contentFile.read())
-            contentFile.close()
-            
-            # Set original information.
-            self.originalName.set_text((content["en"])["pkgName"])
-            self.originalShortDesc.set_text((content["en"])["shortDesc"])
-            textViewSetContent(self.originalLongDesc, ((content["en"])["longDesc"]))
-            
-            # Set target information.
-            self.targetName.set_text(self.pkgName)
-            self.targetShortDesc.set_text("")
-            textViewSetContent(self.targetLongDesc, "")
-            
-            # Clean notify label when init docs.
-            self.notifyLabel.set_text("")
-            
-            # Focus short description entry.
-            self.targetShortDesc.grab_focus()
-        else:
-            # Notify user if haven't package.
-            self.notifyLabel.set_text("你的系统没有 %s 这个包， 请选择其他包翻译. :)" % (self.pkgName))
-
-    def retranslate(self, filename):
-        '''Generate docs.'''
+    def fillContent(self, filename, fillTarget):
+        '''Fill content.'''
         # Get package name.
         (_, self.pkgName) = os.path.split(filename)
         
@@ -248,9 +216,14 @@ class AutoTranslate:
             textViewSetContent(self.originalLongDesc, (translation["en"])["longDesc"])
             
             # Set target information.
-            self.targetName.set_text((translation["zh-CN"])["pkgName"])
-            self.targetShortDesc.set_text((translation["zh-CN"])["shortDesc"])
-            textViewSetContent(self.targetLongDesc, (translation["zh-CN"])["longDesc"])
+            if fillTarget:
+                self.targetName.set_text((translation["zh-CN"])["pkgName"])
+                self.targetShortDesc.set_text((translation["zh-CN"])["shortDesc"])
+                textViewSetContent(self.targetLongDesc, (translation["zh-CN"])["longDesc"])
+            else:
+                self.targetName.set_text(self.pkgName)
+                self.targetShortDesc.set_text("")
+                textViewSetContent(self.targetLongDesc, "")
             
             # Clean notify label when init docs.
             self.notifyLabel.set_text("")
@@ -260,6 +233,14 @@ class AutoTranslate:
         else:
             # Notify user if haven't file.
             self.notifyLabel.set_text("%s 不存在" % (filename))
+            
+    def generateDocs(self, filename):
+        '''Generate docs.'''
+        self.fillContent(filename, False)
+            
+    def retranslate(self, filename):
+        '''Generate docs.'''
+        self.fillContent(filename, True)
         
     def finishTranslate(self):
         '''Finish translate.'''
