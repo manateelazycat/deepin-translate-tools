@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'A visual regular expression editor', 'pkgName': 'kodos', 'longDesc': u'Kodos is an application to aid in the creation and debugging of regular expressions in python. The GUI for Kodos should eliminate the need for using the python interpreter for regex design in most instances.\nHomepage: http://kodos.sourceforge.net/\n'}}

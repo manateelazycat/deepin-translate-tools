@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'GTK+ utility for computing checksums and more', 'pkgName': 'gtkhash', 'longDesc': u'GtkHash is a small GTK+ utility which allows users to compute message digests or checksums using the mhash library. Currently supported hash functions include MD5, SHA1, SHA256, SHA512, RIPEMD, HAVAL, TIGER and WHIRLPOOL.'}}

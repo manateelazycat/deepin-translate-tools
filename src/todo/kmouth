@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'a type-and-say frontend for speech synthesizers', 'pkgName': 'kmouth', 'longDesc': u"KDE's type-and-say frontend for speech synthesizers.\n\nIt includes a history of spoken sentences from which the user can select sentences to be re-spoken.\n\nThis package is part of KDE accessibility module."}}

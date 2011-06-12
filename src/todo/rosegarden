@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'music editor and MIDI/audio sequencer', 'pkgName': 'rosegarden', 'longDesc': u'Rosegarden is a Qt application which provides a mixed Audio/MIDI sequencer (for playback and recording), a multi-track editor, music editing using both piano-roll and score notation, MIDI file IO, lilypond and Csound files export, etc.'}}

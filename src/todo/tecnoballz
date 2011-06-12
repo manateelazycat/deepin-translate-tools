@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'breaking block game ported from the Amiga platform', 'pkgName': 'tecnoballz', 'longDesc': u'This is a Breakout or Arkanoid like game with a lot of bonus stages. You can buy weapons and bonus between stages. Sometimes you have to defeat a guardian. This game is written in C++ and uses the SDL library.'}}

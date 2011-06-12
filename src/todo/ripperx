@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'a GTK-based audio CD ripper/encoder', 'pkgName': 'ripperx', 'longDesc': u'ripperX is a graphical interface for ripping CD audio tracks (using cdparanoia) and then encoding them into the OGG, FLAC, or MP2/3 formats using the vorbis tools, FLAC, toolame or other available MP3 encoders.\n\nIt includes support for CDDB lookups and ID3v2 tags.'}}

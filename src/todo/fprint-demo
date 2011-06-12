@@ -1,0 +1,1 @@
+{'en': {'shortDesc': "simple GTK+ testing libfprint's functions", 'pkgName': 'fprint-demo', 'longDesc': u"fprint-demo is a simple GTK+ application to demonstrate and test libfprint's capabilities\n\nIt allows user-interaction to enroll finger images and, depending scanner vendors, show both normal and binarized representation, including detected minutiaes"}}

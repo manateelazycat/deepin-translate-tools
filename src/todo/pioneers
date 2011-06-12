@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'the Settlers of Catan board game', 'pkgName': 'pioneers', 'longDesc': u'Pioneers is a computer implementation of the Settlers of Catan board game. It can be played over the internet.\n\nThe game includes a server, a client, a computer player, an editor and (in a separate package) a meta-server (for locating running servers).'}}

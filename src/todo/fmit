@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Free Music Instrument Tuner', 'pkgName': 'fmit', 'longDesc': u'fmit is a graphical utility for tuning your musical instruments, with error and volume history and advanced features like waveform shape, harmonics ratio (formants), and microtonal tuning.\n\nfmit uses Qt for its GUI and ALSA (where available) or JACK as its sound input library.'}}

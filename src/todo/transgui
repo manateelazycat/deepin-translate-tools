@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'A front-end to remotely control Transmission', 'pkgName': 'transgui', 'longDesc': u'This package contains Transmission Remote GUI, which is a feature rich, cross platform, front-end to remotely control Transmission daemon via its RPC protocol. It is faster and has more functionality than build-in Transmission web interface.'}}

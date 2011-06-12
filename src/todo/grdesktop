@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'GNOME frontend for the rdesktop client', 'pkgName': 'grdesktop', 'longDesc': u'grdesktop is a GNOME frontend for the remote desktop client (rdesktop).\n\nIt can save several connections (including their options), and browse the network for available terminal servers.\n\nHomepage: http://www.nongnu.org/grdesktop/\n'}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'GTK+ performance benchmark', 'pkgName': 'gtkperf', 'longDesc': u'GtkPerf is an application designed to test GTK+ performance. The point is to create common testing platform to run predefined GTK+ widgets (opening comboboxes, toggling buttons, scrolling text) and this way define the speed of device/platform.'}}

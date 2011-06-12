@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'a tabbed/tiling window manager', 'pkgName': 'tritium', 'longDesc': u'tritium is a tiling/tabbed window manager for the X Window System inspired by the ion3 window manager.  It was written completely from scratch in Python and shares no actual code with ion3.'}}

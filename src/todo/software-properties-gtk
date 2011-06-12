@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'manage the repositories that you install software from', 'pkgName': 'software-properties-gtk', 'longDesc': u'This software provides an abstraction of the used apt repositories. It allows you to easily manage your distribution and independent software vendor software sources.\n\nThis package contains a GTK+ based graphical interface.'}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Telnet/SSH client for X', 'pkgName': 'putty', 'longDesc': u'This is the Unix port of the popular Windows ssh client, PuTTY. It supports flexible terminal setup, mid-session reconfiguration using Ctrl-rightclick, multiple X11 authentication protocols, and various other interesting things not provided by ssh in an xterm.'}}

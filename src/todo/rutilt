@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Configuration tool for rt2x00 wireless network cards', 'pkgName': 'rutilt', 'longDesc': u'RutilT is a Gtk+2 utility for Linux that helps you configure your wireless devices. Although primarily written for the rt2x00 project, it supports any Linux wireless extensions compliant kernel module.'}}

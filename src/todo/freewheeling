@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'live looping musical instrument', 'pkgName': 'freewheeling', 'longDesc': u'FreeWheeling is a live looping instrument built for improvisation. Using a keyboard or a MIDI controller, it allows to build and control repetitive patterns from a live audio stream.\n\nFreeWheeling uses the Jack Audio Connection Kit, Fluidsynth, and SDL.'}}

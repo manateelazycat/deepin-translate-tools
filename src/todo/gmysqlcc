@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'graphical client for managing MySQL databases', 'pkgName': 'gmysqlcc', 'longDesc': u'GTK+ based client for MySQL which allows to make queries and performs administrative jobs such as manage users, process, structures, data dumps and more.'}}

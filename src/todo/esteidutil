@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'EstEID smartcard management tool', 'pkgName': 'esteidutil', 'longDesc': u'Estonian national ID Card management GUI tool. The functions it provides are:\n* Card data reading and viewing\n* Certificate management\n* PIN management\n* Smartcard subsystem diagnostics\n* Testing the authentication functionality\n'}}

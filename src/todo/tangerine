@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'music server using DAAP', 'pkgName': 'tangerine', 'longDesc': u"Tangerine is a simple music sharing server that uses DAAP to share your music over the local network.\n\nThere are several clients that you can then use to connect to it, such as Apple's iTunes, Banshee, and Rhythmbox."}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'LaTeX Editor based on Bluefish', 'pkgName': 'winefish', 'longDesc': u'Winefish is a GTK+ based LaTeX editor, which was forked from Bluefish. The main features are autotext, auto-completion, function references, syntax highlighting, customizable external tools and UTF-8 support.\n\nHomepage: http://winefish.berlios.de'}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'quality-assurance checklist assistant', 'pkgName': 'qa-assistant', 'longDesc': u'QA Assistant is a program that aids in quality assurance. It creates a graphical checklist from an XML description. A reviewer fills in the checklist and then the program outputs a review for submittal to a tracking system.'}}

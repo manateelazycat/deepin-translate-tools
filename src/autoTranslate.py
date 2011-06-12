@@ -207,10 +207,15 @@ class AutoTranslate:
         (_, self.pkgName) = os.path.split(filename)
         
         if self.cache.has_key(self.pkgName):
+            # Get content.
+            contentFile = open(filename, "r")
+            content = eval(contentFile.read())
+            contentFile.close()
+            
             # Set original information.
-            self.originalName.set_text(self.pkgName)
-            self.originalShortDesc.set_text(self.cache[self.pkgName].candidate.summary)
-            textViewSetContent(self.originalLongDesc, self.cache[self.pkgName].candidate.description)
+            self.originalName.set_text((content["en"])["pkgName"])
+            self.originalShortDesc.set_text((content["en"])["shortDesc"])
+            textViewSetContent(self.originalLongDesc, ((content["en"])["longDesc"]))
             
             # Set target information.
             self.targetName.set_text(self.pkgName)

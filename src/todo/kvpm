@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'LVM frontend for KDE', 'pkgName': 'kvpm', 'longDesc': u'The KDE Volume Partition Manager is a GUI for the Linux Volume Manager project and libparted. It uses the standard LVM tools and programs to work with logical volumes. It can also format volumes and mount them.'}}

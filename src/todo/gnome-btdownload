@@ -1,0 +1,1 @@
+{'en': {'shortDesc': "GNOME interface for 'executing' BitTorrent files", 'pkgName': 'gnome-btdownload', 'longDesc': u'A simple GNOME interface designed as a mime-sink for BitTorrent files. gnome-btdownload allows a user to download files using bittorrent, a scatter-gather network.\n\nNot a front-end, more-or-less just a session dialog. See bittorrent for more information.'}}

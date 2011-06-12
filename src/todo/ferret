@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'CASE tool for data model editing', 'pkgName': 'ferret', 'longDesc': u'GNU Ferret (Free Entity Relationship and Reverse Engineering Tool) servers to edit data models. These can be implemented within a range of relational databases such as Postgresql or Mysql.\n\nHomepage: http://www.gnu.org/software/ferret/project/what.html'}}

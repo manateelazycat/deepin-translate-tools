@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'User interface for controlling the JACK sound server', 'pkgName': 'qjackctl', 'longDesc': u'Qjackctl offers a user interface for controlling the JACK sound server daemon. At the same time it figures as a JACK patch bay and monitoring tool.'}}

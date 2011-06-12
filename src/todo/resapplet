@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'A small applet to change your screen resolution', 'pkgName': 'resapplet', 'longDesc': u'It uses XRANDR on-the-fly as well as GNOME Resolution Preferences. Handy for laptops when using data projectors which only run at 1024x768.'}}

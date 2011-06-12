@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'A program to show free/used space on filesystems', 'pkgName': 'gtkdiskfree', 'longDesc': u'A program which shows free and used space on your mounted filesystems. Additionally, it shows the filesystem type and it can mount and umount different filesystems.'}}

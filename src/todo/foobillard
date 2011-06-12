@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'a 3D billiards game using OpenGL', 'pkgName': 'foobillard', 'longDesc': u'Foobillard is a billiards game with a three dimensional display. It supports 8-ball, 9-ball, carambol and snooker, as well as a computer opponent and network play.  It is written using OpenGL, and has very high quality graphics and textures.'}}

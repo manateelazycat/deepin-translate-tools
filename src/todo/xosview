@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'X based system monitor', 'pkgName': 'xosview', 'longDesc': u'Xosview is a monitor which displays the status of several system based parameters. These include CPU usage, load average, memory usage, swap space usage, network usage, interrupts and serial port status. Appearance is fully configurable via command line or X resources.'}}

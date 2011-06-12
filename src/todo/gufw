@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Configure system firewall', 'pkgName': 'gufw', 'longDesc': u'An easy and intuitive way to manage your system firewall. Supports common tasks such as allowing or blocking pre-configured, common p2p, or individual port(s), and many others!'}}

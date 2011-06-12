@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'a message of the day browser for X', 'pkgName': 'xmotd', 'longDesc': u'Xmotd is a message-of-the-day browser for X11 (with additional sysvnews-like support for dumb terminals).  It displays a customizable message box which displays each message-of-the-day until the user has read them all, and then creates a stamp-file.'}}

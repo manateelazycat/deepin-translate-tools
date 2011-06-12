@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'projectM JackAudio module', 'pkgName': 'projectm-jack', 'longDesc': u'projectM is an iterative music visualization library which uses OpenGL for hardware acceleration. It is compatible with Milkdrop presets.\n\nThis package contains an application to visualize JackAudio streams.'}}

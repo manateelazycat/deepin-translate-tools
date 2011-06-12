@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Electric schematic editor', 'pkgName': 'qelectrotech', 'longDesc': u'QElectroTech is a Qt4 application written in C++ . This program is helps you to design electric schematics. It includes both a schematic editor and a symbol editor. It uses XML files to store the produced contents.'}}

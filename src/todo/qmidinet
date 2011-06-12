@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'MIDI Network Gateway via UDP/IP Multicast', 'pkgName': 'qmidinet', 'longDesc': u'QmidiNet is a MIDI network gateway application that sends and receives MIDI data (ALSA Sequencer) over the network, using UDP/IP multicast. It was inspired by multimidicast (http://llg.cubic.org/tools) and designed to be compatible with ipMIDI for Windows (http://nerds.de).'}}

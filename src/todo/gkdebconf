@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Helper to reconfigure packages with Debconf', 'pkgName': 'gkdebconf', 'longDesc': u'This is a program that helps one using the "dpkg-reconfigure" tool. It is basically a graphical frontend. It makes life easier showing a simple menu of packages which can be reconfigured with Debconf and the Debconf frontends that can be used for the reconfiguration.'}}

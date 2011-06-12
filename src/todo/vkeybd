@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Virtual MIDI Keyboard', 'pkgName': 'vkeybd', 'longDesc': u'This program allows you to use the Linux AWE32 driver, OSS MIDI sequencer, or ALSA MIDI sequencer and provides "virtual" keyboard (the musical type), which can be "played" using the keyboard or mouse under X11.'}}

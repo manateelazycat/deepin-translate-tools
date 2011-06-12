@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'multi-protocol instant messenger', 'pkgName': 'qutim', 'longDesc': u'qutIM is an open source, multi-protocol instant messaging client using the Qt 4 framework. It implements support for the ICQ, Jabber/XMPP/Google Talk, Mail.Ru Agent (MRIM), and IRC protocols, and is further extensible via plugins.'}}

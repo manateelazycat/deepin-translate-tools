@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'shellscript to create armel rootfs tarballs using a VM', 'pkgName': 'rootstock', 'longDesc': u'This script creates a tgz file of an armel rootfs you can untar in a partition for your target hardware (beagleboard, EVM or freescale board were tested with this yet)\n\nSee https://wiki.ubuntu.com/ARM/RootfsFromScratch for more details'}}

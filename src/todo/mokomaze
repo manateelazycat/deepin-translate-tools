@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Ball-in-labyrith-game for the FreeRunner', 'pkgName': 'mokomaze', 'longDesc': u'Mokomaze is the opensource implementation of the classic game where you control a steel ball by tilting a wooden labyrinth.\n\nThis package requires acceleration sensors and is targetted for the Openmoko FreeRunner smartphone.'}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'reversi board game', 'pkgName': 'kreversi', 'longDesc': u"KReversi is a board game where two players place pieces on the board to flip the opponent's pieces.  When neither player can flip any more pieces, the player with the most pieces on the board wins the game.\n\nThis package is part of the KDE games module."}}

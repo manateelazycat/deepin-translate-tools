@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'a program for creating and studying hyperbolic 3-manifolds', 'pkgName': 'snappea', 'longDesc': u"SnapPea is Jeff Weeks' computational tool for mathematicians working in low-dimensional topology.  It is used for creating and studying hyperbolic 3-manifolds, and is accessible via Python scripts as well as through a traditional graphical user interface."}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Voice over IP (VoIP) phone application', 'pkgName': 'kphone', 'longDesc': u'Kphone is a Session Initiation Protocol (SIP) user agent for Linux, which allows Voice over IP (VoIP) connections over the Internet.\n\nKphone supports Presence and Instant Messaging, and to some extent video calls between two hosts.\n\nWebsite: http://www.wirlab.net/kphone/'}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'GTK+ frontend for rsync', 'pkgName': 'grsync', 'longDesc': u'grsync is a simple graphical interface using GTK2 for the rsync command line program. It currently supports only a limited set of the most important rsync features, but can be used effectively for local directory synchronization.'}}

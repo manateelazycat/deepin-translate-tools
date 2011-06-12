@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'image viewer using gdk-pixbuf and OpenGL', 'pkgName': 'gliv', 'longDesc': u'GLiv  is an image viewer that uses gdk-pixbuf to load images, and OpenGL to render them.  Moving and zooming is very fast and smooth if you have an OpenGL board.'}}

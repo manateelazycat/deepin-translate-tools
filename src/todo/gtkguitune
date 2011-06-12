@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Guitar and other instruments tuner', 'pkgName': 'gtkguitune', 'longDesc': u'gtkGuitune is a Linux program for tuning guitars and other instruments by using the method of Schmitt-triggering, i.e.  counting the number of triggerings between two trigger levels in a certain amount of time.'}}

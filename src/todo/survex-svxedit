@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'survey data editor for Survex', 'pkgName': 'survex-svxedit', 'longDesc': u'Experimental cave survey data entry editor for Survex.  Packaged separately as it requires Tcl to be installed, and a text editor may be used instead.'}}

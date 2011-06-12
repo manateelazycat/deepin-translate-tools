@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'GUI interface to the wiimote', 'pkgName': 'wmgui', 'longDesc': u'CWiid is a working userspace driver along with various applications implementing event drivers, multiple wiimote connectivity, gesture recognition, and other Wiimote-based functionality.\n\nThis packages provides the GUI to test and display the wiimote data.'}}

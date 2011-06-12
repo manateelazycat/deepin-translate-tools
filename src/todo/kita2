@@ -1,0 +1,1 @@
+{'en': {'shortDesc': '2ch-like BBS browser for KDE user', 'pkgName': 'kita2', 'longDesc': u'kita2 is browser for "2ch-style Bulletin Board System". 2ch is largest BBS in Japan. This program can also browse MachiBBS and Shitaraba. It is based on Ruby and KDE bindings and therefore does not depend on GNOME.\n\nkita2 is still in development, has less features, unstable.'}}

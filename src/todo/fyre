@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'interactively renders Peter de Jong maps (chaotic functions)', 'pkgName': 'fyre', 'longDesc': u'Fyre provides a rendering of the Peter de Jong map, with an interactive GTK+ frontend and a command line interface for easy and efficient rendering of high-resolution, high quality images.'}}

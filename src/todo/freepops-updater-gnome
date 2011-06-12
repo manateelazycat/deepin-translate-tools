@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'GNOME interface for the freepops updater engine', 'pkgName': 'freepops-updater-gnome', 'longDesc': u'This package provides a click-and-update program to download the latest updates from the freepops website.\n\nThe user interface is based on zenity, thus this package is recommended for GTK+ desktop environments like GNOME.'}}

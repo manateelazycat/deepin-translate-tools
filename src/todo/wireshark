@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'network traffic analyzer - GTK+ version', 'pkgName': 'wireshark', 'longDesc': u'Wireshark is a network "sniffer" - a tool that captures and analyzes packets off the wire. Wireshark can decode too many protocols to list here.\n\nThis package provides the GTK+ version of wireshark.'}}

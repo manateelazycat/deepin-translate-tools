@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'A minimal GNOME frontend to GNUPlot', 'pkgName': 'plotdrop', 'longDesc': u"PlotDrop is designed for quick simple visualisation of 2D data series. It is intended to be used in tandem with an external filesystem browser such as GNOME's nautilus or KDE's konqueror. Files containing data are added by dragging them from the browser to the file list."}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'GUI for digital multimeter', 'pkgName': 'qtdmm', 'longDesc': u'A digital multimeter (DMM) attached to the serial port is presented under a Qt surface. The tool plots values over time, has a simple scheduler for delayed starts and logging after a threshold was reached. It supports spawning external applications, too.'}}

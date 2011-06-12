@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'A Gtk2 light weight multilingual BiDi aware text editor', 'pkgName': 'katoob', 'longDesc': u'katoob is a light weight, multi lingual, BIDI-aware text editor. It support opening and saving files in multiple encodings. The main support is for Arabic language, But language specific features can be added.'}}

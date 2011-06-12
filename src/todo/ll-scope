@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'an oscilloscope DSSI plugin', 'pkgName': 'll-scope', 'longDesc': u'The Oscilloscope is a DSSI plugin with a GUI that displays the audio input in an oscilloscope view. It can be useful when working with modular synths, to view the waveforms with at different places in the synth graph.'}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'utility to associate a name to a color', 'pkgName': 'colorname', 'longDesc': u'colorname tries to assign a name to a color using external color definitions and a little math.\n\nFor this it calculates the Euclidean distance between the currently selected color and all predefined colors, either in the YIQ, RGB or HSV color space.'}}

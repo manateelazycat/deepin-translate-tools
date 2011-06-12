@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'catalog CD, DVD and hard disk files', 'pkgName': 'gnomecatalog', 'longDesc': u'Generate thumbnails of the video files and image files via thumbnailers and saves it in the database files.  Save the metadata of the files, then you can search in the metatada of mp3, avis, images (exif). The program have been develop in python-gtk.'}}

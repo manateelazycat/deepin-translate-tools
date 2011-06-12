@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Graphical Storage Device Manager', 'pkgName': 'pysdm', 'longDesc': u'PySDM is a PyGTK-based Storage Device Manager that allows full customization of hard disk mount points without the need to edit fstab manually. It also allows the creation of udev rules for dynamic configuration of storage devices.'}}

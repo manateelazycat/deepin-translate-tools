@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'BBS client for X Window System written in Qt', 'pkgName': 'qterm', 'longDesc': u'QTerm is a BBS client for X Window System. It supports telnet, ssh1 and ssh2 protocols. It also supports zmodem, URL detect, mouse action.\n\nIt also supports detecting location from ip address, but you need do some extra work, see README.Debian.'}}

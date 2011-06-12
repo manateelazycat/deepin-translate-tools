@@ -1,0 +1,1 @@
+{'en': {'shortDesc': "Puzzle game inspired on Einstein's puzzle", 'pkgName': 'einstein', 'longDesc': u"This puzzle is a remake of old DOS game Sherlock which was inspired by Albert Einstein's puzzle. The game goal is to open all cards in square of 6x6 cards. For this, a number of hints describing relations between card positions are given. Use them to find the correct layout."}}

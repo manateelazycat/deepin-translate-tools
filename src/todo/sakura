@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'simple but powerful libvte-based terminal emulator', 'pkgName': 'sakura', 'longDesc': u"Sakura is a terminal emulator based on GTK+ and VTE. It's a terminal emulator with few dependencies, so you don't need a full GNOME desktop installed to have a decent terminal emulator."}}

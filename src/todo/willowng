@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'content filtering web proxy', 'pkgName': 'willowng', 'longDesc': u'WillowNG is a content filtering proxy that uses a bayesian classifier to learn what is good or bad based on past training.'}}

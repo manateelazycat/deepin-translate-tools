@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'A keyboard multiplexer for the gnome desktop', 'pkgName': 'keyboardcast', 'longDesc': u'With keyboardcast you can send keystrokes to any number of windows you select simultaneously. It also offers an option to start gnome-terminal processes (for instance to login to remote hosts)'}}

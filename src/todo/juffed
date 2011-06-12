@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Lightweight Qt 4 text editor', 'pkgName': 'juffed', 'longDesc': u'JuffEd is a simple, cross-platform text editor written using the Qt 4 toolkit and the QScintilla library. It supports most features found in modern text editors, including syntax highlighting, bracket matching, switching encodings, sessions, and a plugin API.'}}

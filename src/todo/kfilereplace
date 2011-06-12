@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'batch search-and-replace component', 'pkgName': 'kfilereplace', 'longDesc': u'KFileReplace is an embedded component for KDE that acts as a batch search-and-replace tool. It allows you to replace one expression with another in many files at once.\n\nThis package is part of KDE web development module.'}}

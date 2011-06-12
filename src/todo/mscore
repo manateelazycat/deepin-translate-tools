@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'Dummy transitional package for musescore', 'pkgName': 'mscore', 'longDesc': u'The package `mscore` has been renamed to `musescore`.\n\nThis is a dummy, transitional package which can be safely removed.'}}

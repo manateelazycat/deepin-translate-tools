@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'simpler figure block game', 'pkgName': 'freealchemist', 'longDesc': u'FreeAlchemist is a figure block game written in Python where you have to connect blocks.\n\nThe three or more blocks connected with the same shape will be replaced by a block with a different shape.'}}

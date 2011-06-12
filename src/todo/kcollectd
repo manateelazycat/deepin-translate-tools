@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'simple collectd graphing frontend for KDE', 'pkgName': 'kcollectd', 'longDesc': u'Kcollectd is a graphical KDE-frontend to collectd that allows to view RRD files that have been created by collectd. It allows to easily navigate in the data with the mouse and can be used as a chart recorder.'}}

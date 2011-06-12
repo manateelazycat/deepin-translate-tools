@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'GTK+ front-end for eSpeak and mbrola', 'pkgName': 'gespeaker', 'longDesc': u'Gespeaker is a GTK+ frontend for eSpeak and mbrola. It allows to play a text in many languages with settings for voice, pitch, volume, speed and word gap.\n\nSince version 0.6 it can use mbrola package and voices to obtain a more realistic text reading experience.'}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'clipboard manager', 'pkgName': 'klipper', 'longDesc': u'Klipper is a clipboard manager. It stores a history of the clipboard contents and can automatically perform actions when certain items are selected, such as launch a web browser when a URL is selected.\n\nThis package is part of the KDE base workspace module.'}}

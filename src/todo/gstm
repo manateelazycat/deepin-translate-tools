@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'SSH tunnel manager for GNOME', 'pkgName': 'gstm', 'longDesc': u'GNOME Secure shell Tunnel Manager is a front-end to manage secure shell tunneled port redirects. A port redirect is when you use secure shell to tunnel from your machine through another machine.'}}

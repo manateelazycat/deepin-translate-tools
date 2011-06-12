@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'gtk interface to xrandr', 'pkgName': 'grandr', 'longDesc': u'A simple gtk interface to the X Resize And Rotate (XRandR) extension. This allows you change the resolution and frequency of your monitor dynamically using a simple interface. For drivers that support it, it can also configure the relative positioning of multiple monitors.'}}

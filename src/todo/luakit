@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'A fast and small web browser extensible by Lua', 'pkgName': 'luakit', 'longDesc': u'Luakit is a small web browser created by binding Lua to WebKitGTK.'}}

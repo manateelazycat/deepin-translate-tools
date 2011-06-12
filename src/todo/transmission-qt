@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'lightweight BitTorrent client (Qt interface)', 'pkgName': 'transmission-qt', 'longDesc': u'Transmission is a set of lightweight BitTorrent clients (in GUI, CLI and daemon form). All its incarnations feature a very simple, intuitive interface on top on an efficient, cross-platform back-end.\n\nThis package contains the Qt stand-alone client.'}}

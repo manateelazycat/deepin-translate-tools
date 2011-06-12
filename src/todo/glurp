@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'GTK+ frontend to the Music Player Daemon (MPD)', 'pkgName': 'glurp', 'longDesc': u"glurp is a GTK+ frontend to the MPD music daemon. It features:\n * Playlist support with id3 tags display.\n * Password-protected connection to MPD.\n * Easy switching of MPD's audio output device.\n * Easy operations with MPD's database/playlists/streams.\n"}}

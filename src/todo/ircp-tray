@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'IrDA and OBEX wireless file transfer', 'pkgName': 'ircp-tray', 'longDesc': u'Ircp Tray is a IrDA file transfer program for Linux. It stays inside your system tray, listening for incoming IrOBEX file transfer request, as well as sending file out to remote devices via IrDA.\n\nIrcp Tray is compliant with OBEX Push protocol.'}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'single/multiplayer lobby for the Spring RTS engine', 'pkgName': 'springlobby', 'longDesc': u'This package provides a single-player and multiplayer lobby for Spring. Other features include a P2P system for downloading maps and mods and a built-in IRC-like chat client.'}}

@@ -1,0 +1,1 @@
+{'en': {'shortDesc': 'control GUI for liquidsoap', 'pkgName': 'liguidsoap', 'longDesc': u'Liguidsoap is a GUI for controlling liquidsoap, using pyGTK.\n\nIt allows one to interact in various ways with:\n* outputs\n* playlists\n* queues\n* mixing table\nIt can control a running instance of liquidsoap or launch its own instance.'}}
