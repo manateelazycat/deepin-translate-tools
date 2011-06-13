@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Status monitor tool for Epson inkjet printers', 'pkgName': 'mtink', 'longDesc': u'This is a printer status monitor which enables to get the remaining ink quantity, to print test patterns, to reset printer and to clean nozzle.\n\nEven if this monitor is targeted to Epson printer, some HP and Canon model are supported.'}}
