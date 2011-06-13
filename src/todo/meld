@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'graphical tool to diff and merge files', 'pkgName': 'meld', 'longDesc': u'Meld is a tool which allows the user to see the changes in, and merge between, either two files, two directories, or two files with a common ancestor.'}}
