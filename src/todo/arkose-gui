@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Desktop application sandboxing - gui', 'pkgName': 'arkose-gui', 'longDesc': u'arkose is a tool which lets you easily create containers with copy-on-write support using the namespace capabilities of recent Linux kernels.\n\nThis package contains the GUI tool.'}}
