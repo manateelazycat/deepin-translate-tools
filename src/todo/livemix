@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Simple mixer for live performances', 'pkgName': 'livemix', 'longDesc': u'Based on Jack. Features:\n- In, pre fader, post fader, sub-groups customisable channel.\n- All-in is stereo-in internally.\n- LADSPA effects.\n- LASH support.\n- MIDI support.\n- PK & pseudo VU meters.\n- Simple GUI.\n'}}
