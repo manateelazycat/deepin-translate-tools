@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'graphical wrapper around pon and poff', 'pkgName': 'gpppon', 'longDesc': u'gpppon is an utility that reads the names of the configured providers from /etc/ppp/peers and calls the pon and poff scripts with the selected provider as argument.'}}
