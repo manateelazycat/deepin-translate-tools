@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Small GNOME VNC client', 'pkgName': 'gtkvncviewer', 'longDesc': u'This script provides a GUI for connecting to VNC servers. It remembers the credentials of known servers, so connecting to a VNC server is just one double-click away. Servers are shown in an icon view.'}}

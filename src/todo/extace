@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'waveform viewer', 'pkgName': 'extace', 'longDesc': u'This is the extace waveform viewer. It plugs itself in as an EsounD monitor and samples and displays the output from the EsounD daemon.'}}

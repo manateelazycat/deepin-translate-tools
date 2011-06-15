@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Lightweight pdf viewer based on poppler libs', 'pkgName': 'epdfview', 'longDesc': u'The aim of ePDFView is to make a simple PDF document viewer, in the lines of Evince but without using the GNOME libraries.'}}

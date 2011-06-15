@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'A "Panzer General" - like game', 'pkgName': 'lgeneral', 'longDesc': u'A game similar to well known to most of PC users strategic game - Panzer General. It is a turned-based strategy written by Michael Speck. Uses libSDL and requires X Window System.\n\nThis is the game engine only - lgeneral requires scenarios that are available on http://lgames.sf.net/'}}

@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'simple GTK+ HTML5 rich text editor', 'pkgName': 'gwrite', 'longDesc': u'gWrite is a simple GTK+ HTML5 WYSIWYG editor, focusing on writing and simple text formating. It can automatically generate a table of contents based on the document structure.\n\nIt aims to be lighter than OOWrite & OOWeb, and to be as useful as them.'}}

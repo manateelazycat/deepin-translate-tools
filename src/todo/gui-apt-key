@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Graphical Key Manager for APT', 'pkgName': 'gui-apt-key', 'longDesc': u'The graphical frontend to the apt-key utility (gak) provides an easy to use interface to maintain digital keys for APT.  They are required to authenticate Debian archives and prevent malicious packages to creep in.\n\n'}}

@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'GNOME application to initiate connections to remote machines', 'pkgName': 'grcm', 'longDesc': u'GNOME Remote Connection Manager is an application that provides an easy way to initiate connections to remote machines.  Its primary goal is to provide a GUI to launch ssh, telnet and rdesktop type of applications, however it is highly configurable.'}}

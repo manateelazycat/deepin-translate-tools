@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Simple and fast GTK2 sound editor', 'pkgName': 'mhwaveedit', 'longDesc': u'mhWaveEdit is a graphical program for editing sound files. It is intended to be user-friendly and robust. It does not require a fast computer.\n\nSupports JACK, ALSA, OSS and PulseAudio.'}}

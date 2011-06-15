@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Learn how to program with ants and spider webs', 'pkgName': 'laby', 'longDesc': u'Laby is a small program to learn how to program with ants and spider webs. You have to move an ant out of a labyrinth, avoid spider webs, move rocks, etc.\n\nUsing Laby, you can learn OCaml, C and Java. Other bindings can be added later to support new programming languages.'}}
