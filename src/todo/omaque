@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'A comicbook reader', 'pkgName': 'omaque', 'longDesc': u'Omaque is a comicbook reader written in Ruby and based on Okular. It features a continuous view mode and bookmark saving.\n\nIt supports many formats including Zip, Rar, CBR, CBZ, PDF and directory.'}}
