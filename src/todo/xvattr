@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Utility to change Xv attributes', 'pkgName': 'xvattr', 'longDesc': u'This is a small command line program to change Xv attributes like brightness, contrast,...\n\nThis package also include a gtk front-end.'}}

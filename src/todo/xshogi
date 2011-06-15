@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'An X Window System Japanese Chess (Shogi) Board', 'pkgName': 'xshogi', 'longDesc': u'Gnushogi is a computer player for Shogi (Japanese chess).\n\nXShogi provides an X Window interface to play Shogi against gnushogi, and can also be used as an interface for a game between two humans on the same computer.'}}

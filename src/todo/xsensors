@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'A hardware health information viewer', 'pkgName': 'xsensors', 'longDesc': u'xsensors reads data from the libsensors library regarding hardware health such as temperature, voltage and fan speed and displays the information in a digital read-out.'}}
