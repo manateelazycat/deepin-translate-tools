@@ -303,6 +303,10 @@ latexila
 tex-guy
 texmaker
 
+
+***  haskell
+
+
 ***  video
 enna
 gmlive
@@ -313,6 +317,7 @@ moovida
 openshot
 toonloop
 transmageddon
+vlc
 
 
 ***  web
@@ -885,7 +890,6 @@ todiscgui
 trimage
 tuxpaint
 ufraw
-vlc
 winff
 wings3d
 xaos
@@ -2023,3 +2027,8 @@ xvattr
 xvidcap
 zekr
 zim
+
+
+***  xfce
+
+
