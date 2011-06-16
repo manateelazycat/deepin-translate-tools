@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'System tray integration for XMMS2', 'pkgName': 'xmms2tray', 'longDesc': u'XMMS2tray is a small XMMS 2 client that displays an icon in a X11 system tray with a customizable popup menu and notification bubbles.\n\nIt is not (yet) a complete client by itself but provides an unobtrusive and simple way of controlling current playlist.'}}

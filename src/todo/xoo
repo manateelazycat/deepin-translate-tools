@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'graphical wrapper around Xnest/Xephyr', 'pkgName': 'xoo', 'longDesc': u"Xoo is a graphical wrapper around Xnest/Xephyr, the nested X server. You can make Xnest look like a particular device's display and set up buttons on that device.  This is useful for embedded developers who want to simulate a target device on their desktop machine."}}

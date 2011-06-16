@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'graphical frontend for obexftp written in TCL/TK', 'pkgName': 'obextool', 'longDesc': u'ObexTool is a graphical frontend to communicate with mobiles and other devices capable of communicating via Obex Protocol. It uses the obexftp command line tool to transfer data and has several plugins to decode files common to Siemens mobile phones and others.'}}
