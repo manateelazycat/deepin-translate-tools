@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'safe, simple storage system for passwords', 'pkgName': 'keysafe', 'longDesc': u'This package contains two tools for managing passwords:\n* keysafe - access your key safe\n* ksed - edit your key safe\n'}}
