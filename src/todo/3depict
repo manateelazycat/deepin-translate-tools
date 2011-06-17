@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'visualisation and analysis for single valued point data', 'pkgName': '3depict', 'longDesc': u'This program provides a graphical interface for the scientific analysis of real valued point data (x,y,z,value). This is primarily targeted towards Atom probe tomography applications, but may prove useful to other applications as well.'}}
