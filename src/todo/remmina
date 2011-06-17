@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'remote desktop client for GNOME desktop environment', 'pkgName': 'remmina', 'longDesc': u'Remmina is a remote desktop connection client able to display and control a remote desktop session.\n\nIt supports multiple network protocols in an integrated and consistant user interface. Currently RDP, VNC, NX, XDMCP and SSH protocols are supported.'}}
