@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Soundcard-based X program for operating PSK31', 'pkgName': 'twpsk', 'longDesc': u"Twpsk uses a soundcard to receive and transmit PSK31, an extremely narrow band HF-mode. PSK31 is a mode for keyboard QSO's."}}

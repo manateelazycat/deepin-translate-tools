@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Educational tool for relational algebra (graphical user interface)', 'pkgName': 'relational', 'longDesc': u'Relational is primarily a tool to provide a workspace for experimenting with relational algebra, an offshoot of first-order logic.\n\nThis package provides a graphical user interface that can be used for executing relational queries.'}}

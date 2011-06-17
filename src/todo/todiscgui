@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'tools for creating video DVDs, VCDs, and SVCDs - todisc GUI', 'pkgName': 'todiscgui', 'longDesc': u'tovid can convert your video files to the correct format, generate navigation menus, and create and burn the disc image.\n\nThis package includes the GUI front end to the todisc utility, written using the Tk widget toolkit.'}}

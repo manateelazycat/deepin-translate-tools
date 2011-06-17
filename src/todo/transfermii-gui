@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'transfer your mii from and to your wiimotes -- GUI', 'pkgName': 'transfermii-gui', 'longDesc': u'transfermii is a program based on cwiid framework for using the wiimote under Linux.\n\nIt allows you to transfer your miis (the characters used in the wii) from your wiimote and vice-versa.\n\nThis packages provides the GTK+ GUI program.'}}
