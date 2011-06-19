@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'KDE user interface and desktop integration for driver management', 'pkgName': 'jockey-kde', 'longDesc': u'Jockey provides a user interface for configuring third-party drivers, such as the Nvidia and ATI fglrx X.org and various Wireless LAN kernel modules.\n\nThis package contains the KDE frontend.'}}
