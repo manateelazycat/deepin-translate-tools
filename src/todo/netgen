@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Automatic 3d tetrahedral mesh generator', 'pkgName': 'netgen', 'longDesc': u'NETGEN is an automatic 3d tetrahedral mesh generator. It accepts input from constructive solid geometry (CSG) or boundary representation (BRep) from STL file format.  NETGEN contains modules for mesh optimization and hierarchical mesh refinement.'}}
