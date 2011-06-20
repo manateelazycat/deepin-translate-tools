@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'IDE for Python using Tkinter (default version)', 'pkgName': 'idle', 'longDesc': u"IDLE is an Integrated Development Environment for Python. IDLE is written using Tkinter and therefore quite platform-independent.\n\nThis package is a dependency package, which depends on Debian's default Python version (currently v2.7) of IDLE."}}
