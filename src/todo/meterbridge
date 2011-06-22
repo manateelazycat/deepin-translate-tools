@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'A collection of Audio meters for the JACK audio server', 'pkgName': 'meterbridge', 'longDesc': u'Meterbridge implements various meters for the JACK Audio Connection Kit. Examples of the available types are:\n * PPM Peak Program level Meter\n * VU Volume Unit Meter\n * DPM Digital Peak Meter\n * JF Jellyfish Meter\n * SCO Scope\n'}}

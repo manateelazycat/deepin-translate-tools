@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'graphical interface to compute the melting temperature of nucleic acid duplex', 'pkgName': 'melting-gui', 'longDesc': u'This package provides a graphical user interface for the ??melting?? program, which computes for a nucleic acid duplex the enthalpy, the entropy and the melting temperature of the helix-coil transitions.'}}
