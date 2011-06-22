@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'chess client for the GNOME desktop environment', 'pkgName': 'gnome-chess', 'longDesc': u'This package contains GNOME Chess, a graphical user interface for playing chess and displaying PGN files.\n\nIt works with different chess programs and servers. It works best with the chess engine Crafty, but most features should also work with GNU Chess.'}}

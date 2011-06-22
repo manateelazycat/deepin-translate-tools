@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'network information tool for GNOME', 'pkgName': 'gnome-nettool', 'longDesc': u'GNOME Nettool is a network information tool which provides user interfaces for some of the most common command line network tools including:\n  * ifconfig\n  * ping\n  * netstat\n  * tracepath\n  * port scanning\n  * DNS lookup\n  * finger\n  * whois\n'}}

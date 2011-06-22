@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Control panel to configure remote controls', 'pkgName': 'gnome-lirc-properties', 'longDesc': u"This control panel updates lirc's configuration files to match your choices. It also allows editing, uploading and downloading of custom remote control configuration files."}}

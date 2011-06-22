@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'GNOME applet to post to weblog entries', 'pkgName': 'gnome-blog', 'longDesc': u'gnome-blog is a panel object (aka applet) that can post to weblogs using bloggerAPI, advogato API, MetaWeblog API or LiveJournal API\n\nIt notably works with Blogger.com / Blogspot.com, Advogato.org, Movable Type, WordPress, LiveJournal.com and Pybloxsom.'}}
