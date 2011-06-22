@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'MFSK, RTTY and other digital mode terminal for HF/amateur radio', 'pkgName': 'gmfsk', 'longDesc': u'gmfsk is a terminal program for amateur radio digital communication modes for GNOME. It supports MFSK, RTTY, THROB, PSK31, MT63 and Hellschreiber modulations. It is used for keyboard-to-keyboard chatting and not reliable packet communication.'}}

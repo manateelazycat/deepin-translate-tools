@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'GTK+-based client for Last.fm and compatible radio services', 'pkgName': 'vagalume', 'longDesc': u"Vagalume is a Last.fm client designed for the GNOME desktop environment. It's small and provides the basic Last.fm features, such as scrobbling, tags, recommendations, etc.\n\nVagalume also supports other Last.fm-compatible services such as Libre.fm"}}

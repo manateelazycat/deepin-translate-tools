@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'tool to control TV chips on NVidia cards under Linux', 'pkgName': 'nvtv', 'longDesc': u'This is a program to control the TV encoder chips on NVidia cards under Linux, in order to get tv-out with a wide range of resolutions and sizes, including "overscan" modes. It does even work with the free nv drivers.'}}
