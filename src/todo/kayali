@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'A Qt-based Computer Algebra System', 'pkgName': 'kayali', 'longDesc': u'Kayali is a Qt based Computer Algebra System (CAS) that can also be used as an advanced replacement for KDE KCalc.\n\nIt is essentially a front end GUI for Maxima (and is easily extended to other CAS back-ends) and Gnuplot.'}}

@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Shoot-em-up a la galaxian', 'pkgName': 'criticalmass', 'longDesc': u"criticalmass, aka critter, is a shoot-'em-up in the style of Galaxian with very colorful and smooth graphics (provided that you have 3d acceleration)\n\nNote: criticalmass uses OpenGL, and will probably not run well if you do not have a 3d accelerator which is supported by X."}}
