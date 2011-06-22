@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'web browser plugin based on OpenJDK and IcedTea to execute Java applets', 'pkgName': 'icedtea-plugin', 'longDesc': u'IcedTeaPlugin is a web browser plugin to execute Java applets, supporting LiveConnect/JavaScript. It is targeted for xulrunner-1.9 and compatible browsers that support the NPAPI.'}}

@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Interactive System Activity Grapher for sysstat', 'pkgName': 'isag', 'longDesc': u'This package provides the command isag, which graphically displays the system activity data stored in the binary logs produced by sar (in the package sysstat).'}}
