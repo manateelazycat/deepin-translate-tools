@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'GNOME ink level monitor', 'pkgName': 'inkblot', 'longDesc': u'Inkblot is an ink level monitor for the GNOME desktop environment, based on the libinklevel library. It supports many Canon, Epson and HP printers, and both black and color cartridges.\n\nFor the list of supported printers, see the libinklevel website at http://libinklevel.sourceforge.net.'}}
