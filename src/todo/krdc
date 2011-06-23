@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Remote Desktop Connection client', 'pkgName': 'krdc', 'longDesc': u'The KDE Remote Desktop Connection client can view and control a desktop session running on another system.  It can connect to Windows Terminal Servers using RDP and many other platforms using VNC/RFB.\n\nThis package is part of the KDE networking module.'}}

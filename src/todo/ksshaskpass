@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'interactively prompt users for a passphrase for ssh-add', 'pkgName': 'ksshaskpass', 'longDesc': u'A KDE 4 version of ssh-askpass with KWallet support.'}}
