@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'a graphical user interface for the PDF Tool Kit', 'pkgName': 'pdfchain', 'longDesc': u'The package includes features designed to handle PDF files in a easy way. Basically it can merge, split, add backgrounds or stamps and add attachments. There are some tools for extended needs, too.\n\nThe GUI is written in GTKmm, a C++ library for GTK+.'}}

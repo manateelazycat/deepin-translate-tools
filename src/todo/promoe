@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'GUI client for XMMS2', 'pkgName': 'promoe', 'longDesc': u"Promoe is a client for the XMMS2 music daemon. Promoe??s interface is modeled after XMMS/WinAMP classic and supports Winamp 2 skins. It's written in C++ and uses the Qt4 toolkit."}}

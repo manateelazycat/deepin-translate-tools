@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'projectM PulseAudio module', 'pkgName': 'projectm-pulseaudio', 'longDesc': u'projectM is an iterative music visualization library which uses OpenGL for hardware acceleration. It is compatible with Milkdrop presets.\n\nThis package contains an application to visualize PulseAudio streams.'}}

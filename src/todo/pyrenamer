@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'mass file renamer written in PyGTK', 'pkgName': 'pyrenamer', 'longDesc': u'You can rename files using patterns, search and replace, substitutions, insert or delete text, or even rename files manually. You can also rename images using their EXIF tags and music using their internal tags.'}}

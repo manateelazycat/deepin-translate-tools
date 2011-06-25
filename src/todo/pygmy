@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'PyGTK client for the Music Player Daemon (MPD)', 'pkgName': 'pygmy', 'longDesc': u'Pygmy is a graphical client for MPD with a single, collapsable control/playlist window, an optional tray icon, and a library browser which can also be run as a standalone program.'}}

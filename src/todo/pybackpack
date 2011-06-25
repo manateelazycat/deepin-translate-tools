@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'user friendly file backup tool for GNOME', 'pkgName': 'pybackpack', 'longDesc': u'A graphical tool to make file backup simpler. Provides a user-friendly interface to rdiff-backup which allows you to back up your files easily to an archive, to a CD/DVD or to a remote location using SSH.'}}

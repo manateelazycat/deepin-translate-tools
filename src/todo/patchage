@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'modular patch bay for Jack audio and Alsa Midi', 'pkgName': 'patchage', 'longDesc': u'Patchage provides a graphical interface to connect jack and midi inputs and outputs. Each application is represented as one box with inputs on the left and output on the right. Boxes can be moved around and arranged to have a clear display of the current setup.'}}
