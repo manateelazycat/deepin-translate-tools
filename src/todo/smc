@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'a Jump and Run game like Super Mario World', 'pkgName': 'smc', 'longDesc': u'Secret Maryo Chronicles is an Open Source two-dimensional platform game with a style designed similar to classic sidescroller games.\n\nIt utilizes the platform independent library SDL and since Version 0.98 with the OpenGLi accelerated Graphics Renderer developed in C++.'}}

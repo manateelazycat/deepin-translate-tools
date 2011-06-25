@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'An implementation of the Snake game.', 'pkgName': 'snake4', 'longDesc': u'This is a basic but nice implementation of the snake game. The objective is to "snake around" and eat fruit, while avoiding the evil headbanger and not crashing into your tail.\n\nFeatures five levels of difficulty and a site-wide high score list.'}}

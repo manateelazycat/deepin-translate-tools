@@ -1,1 +1,0 @@
-{'en': {'shortDesc': "Classic 2D jump 'n run sidescroller with Tux", 'pkgName': 'supertux', 'longDesc': u"SuperTux is a classic 2D jump 'n run sidescroller game in a similar style like the original SuperMario games.\n\nAs of 0.3.0, OpenGL is needed and SDL is no longer supported by upstream."}}

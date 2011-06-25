@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Utility to create music scores from microphone', 'pkgName': 'scolily', 'longDesc': u'Scolily record from any audio device handled by alsa, and then create a music score ( lilypond, ABC music and Midi files are currently supported ).\n\nHomepage: https://scolily.codingteam.net/'}}

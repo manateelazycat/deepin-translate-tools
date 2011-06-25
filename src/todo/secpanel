@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'graphical user interface for SSH and SCP', 'pkgName': 'secpanel', 'longDesc': u'SecPanel is a graphical user interface for managining and running secure shell (ssh) and secure network copy (scp) connections via OpenSSH. It eases key distribution and other tasks related to using these programs.'}}

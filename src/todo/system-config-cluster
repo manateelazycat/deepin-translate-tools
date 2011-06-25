@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'red hat cluster suite configuration tool (GUI)', 'pkgName': 'system-config-cluster', 'longDesc': u'This package contains the GUI to create the red hat cluster suite config file. It is extremely powerful and simple to use and it is reccomended if you are not familiar with XML.\n\nNOTE: the GUI is still considered experimental.'}}

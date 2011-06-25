@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'a window manager for X11', 'pkgName': 'sawfish', 'longDesc': u'Sawfish is an extensible window manager using an Emacs Lisp-like scripting language. All window decorations are configurable, the basic idea is to have as much user-interface policy as possible controlled through the Lisp language.'}}

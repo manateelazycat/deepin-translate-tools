@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'GNOME system tray application for SynCE', 'pkgName': 'synce-trayicon', 'longDesc': u'The SynCE trayicon puts an icon in the GNOME system tray which allows the user to get status updates on a SynCE device connection. It can also start the synchronization process and update partnerships on the device.'}}

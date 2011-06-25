@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'GNOME application to convert audio files into other formats', 'pkgName': 'soundconverter', 'longDesc': u'SoundConverter is a simple sound converter application for the GNOME environment. It reads sound files in any format supported by GStreamer and outputs them in Ogg Vorbis, FLAC, or WAV format, or MP3 format if you have the GStreamer LAME plugin.'}}
