@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'Openstreetmap.org viewer / wayfinder / search client', 'pkgName': 'gosmore', 'longDesc': u'Gosmore is a openstreetmap.org viewer and wayfinder with support for speech syntesis and fetching the current location from gpsd.\n\nThis package requires additional data files which can be downloaded freely from openstreetmap.org.'}}
