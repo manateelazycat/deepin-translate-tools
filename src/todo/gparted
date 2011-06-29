@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'GNOME partition editor', 'pkgName': 'gparted', 'longDesc': u'GParted uses libparted to detect and manipulate devices and partition tables while several (optional) filesystem tools provide support for filesystems not included in libparted.'}}
