@@ -1,1 +1,0 @@
-{'en': {'shortDesc': 'LinuxSampler GUI frontend based on the Qt toolkit', 'pkgName': 'qsampler', 'longDesc': u'QSampler is a LinuxSampler GUI front-end application written in C++ around the Qt3 toolkit using Qt Designer. At the moment it just wraps as a client reference interface for the LinuxSampler Control Protocol (LSCP).'}}
