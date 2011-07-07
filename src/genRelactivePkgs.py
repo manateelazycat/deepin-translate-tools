@@ -20,34 +20,31 @@
 # You should have received a copy of the GNU General Public License
 # along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+import os
+import apt_pkg
 import apt
-import sys
 
-def pickPkgs():
-    '''Pick packages that available in local system.'''
-    # Get input file.
-    inputPkgs = sys.argv[1]
-
-    # Get local packages list.
+def genRelactivePkgs(whitelistDir):
+    '''Generate relactive packages.'''
+    apt_pkg.init()
     cache = apt.Cache()
-    pkgs = []
-    for pkg in cache:
-        pkgs.append(pkg.name)
     
-    # Print available packages.
-    print "*** Available packages:\n"
-    for line in open(inputPkgs).readlines():
-        pkgName = line.rstrip("\n")
-        if pkgName in pkgs:
-            print pkgName
-    
-    # Print Unknown packages.
-    print "\n*** Unknown packages:\n"
-    for line in open(inputPkgs).readlines():
-        pkgName = line.rstrip("\n")
-        if not pkgName in pkgs:
-            print pkgName
-    
+    for (dirpath, dirname, files) in os.walk(whitelistDir):
+        for pkgFile in files:
+            content = ""
+            for line in open(whitelistDir + "/" + pkgFile).readlines():
+                pkgName = line.rstrip("\n")
+                content += pkgName + "\n"
+                dependencies = cache[pkgName].candidate.dependencies
+                for d in dependencies:
+                    for bd in d.or_dependencies:
+                        content += bd.name + "\n"
+                content += "\n"
+                
+            filepath = "./relactiveWhitelist/" + pkgFile
+            pFile = open(filepath, "w")            
+            pFile.write(content)
+            pFile.close()
+                
 if __name__ == "__main__":
-    pickPkgs()
-    
+    genRelactivePkgs("./whitelist")

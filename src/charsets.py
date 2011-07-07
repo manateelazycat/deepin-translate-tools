@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+# author: Leon Dong <Leon.Dong@gmail.com> 老董
 """
     This module includes gbk and big5 charsets mapping.
 """
