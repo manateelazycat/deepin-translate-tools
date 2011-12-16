@@ -212,15 +212,15 @@ class AutoTranslate:
             translationFile.close()
             
             # Set original information.
-            self.originalName.set_text((translation["en"])["pkgName"])
-            self.originalShortDesc.set_text((translation["en"])["shortDesc"])
-            textViewSetContent(self.originalLongDesc, (translation["en"])["longDesc"])
+            self.originalName.set_text((translation["default"])["pkgName"])
+            self.originalShortDesc.set_text((translation["default"])["shortDesc"])
+            textViewSetContent(self.originalLongDesc, (translation["default"])["longDesc"])
             
             # Set target information.
             if fillTarget:
-                self.targetName.set_text((translation["zh-CN"])["pkgName"])
-                self.targetShortDesc.set_text((translation["zh-CN"])["shortDesc"])
-                textViewSetContent(self.targetLongDesc, (translation["zh-CN"])["longDesc"])
+                self.targetName.set_text((translation["zh_CN"])["pkgName"])
+                self.targetShortDesc.set_text((translation["zh_CN"])["shortDesc"])
+                textViewSetContent(self.targetLongDesc, (translation["zh_CN"])["longDesc"])
             else:
                 self.targetName.set_text(self.pkgName)
                 self.targetShortDesc.set_text("")
@@ -252,13 +252,13 @@ class AutoTranslate:
 
         # Get content.
         content = {}
-        content["en"] = {"pkgName" : self.originalName.get_text(),
-                         "shortDesc" : self.originalShortDesc.get_text(),
-                         "longDesc" : textViewGetContent(self.originalLongDesc)}
-        content["zh-CN"] = {"pkgName" : self.targetName.get_text(),
+        content["default"] = {"pkgName" : self.originalName.get_text(),
+                              "shortDesc" : self.originalShortDesc.get_text(),
+                              "longDesc" : textViewGetContent(self.originalLongDesc)}
+        content["zh_CN"] = {"pkgName" : self.targetName.get_text(),
                             "shortDesc" : self.targetShortDesc.get_text(),
                             "longDesc" : textViewGetContent(self.targetLongDesc)}
-        content["zh-TW"] = {"pkgName" : jtof(self.targetName.get_text()),
+        content["zh_TW"] = {"pkgName" : jtof(self.targetName.get_text()),
                             "shortDesc" : jtof(self.targetShortDesc.get_text()),
                             "longDesc" : jtof(textViewGetContent(self.targetLongDesc))}
         
